@@ -7,19 +7,36 @@
           <div class="homepage_image container" alt="developer_image"></div>
         </div>
         <div fxFlex.gt-sm="50" fxFlex.lt-md="50">
-          <p>Hi I'm</p>
-          <p>Naveenchandra Naik</p>
-          <p>Welcome to my Profile</p>
+          <p class="title-text"> Hi I'm Naveenchandra Naik</p>
+          <p class="title-subtext anim-typewriter">
+            Frontend Developer 
+            Welcome to my Profile</p>
+
+          <p class="para">Passionate about creating beautiful, functional, 
+            and user-friendly web experiences that make a difference. Let's build something amazing together.</p>
           <div class="button">
             <button mat-raised-button (click)="downloadPdf()">Download CV <mat-icon>open_in_new</mat-icon></button>&nbsp;
-            <a href="#contact">Contact</a>
+            <!-- <a mat-raised-button color="primary" href="#contact">Let's talk</a> -->
+            <a mat-raised-button color="primary" (click)="openModel()">Let's talk</a>
           </div>
         </div>
       </div>
     </div>
     <div fxFlex="20"></div>
   </div>
-  <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center" class="contact_bg" id="contact">
+  <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+    <div fxFlex.gt-sm="50" fxFlex.lt-md="50" fxLayoutAlign="center center">
+      <div fxFlex="40"></div>
+      <div fxFlex="60" class="icon-container">
+        <a href="https://github.com/NaveenchandraNaik" class="icon" target="_blank"><i class="fa-brands fa-github fa-fade" style="color: black;"></i></a>
+        <a href="mailto:ncnaik131@gmail.com" class="icon"><i class="fa-brands fa-square-google-plus fa-fade"></i></a>
+        <a href="https://www.linkedin.com/in/naveenchandra-naik-a38668237/"  class="icon" target="_blank"><i class="fa-brands fa-linkedin fa-fade" style="color: #74C0FC;"></i></a>
+        <a href="tel:+91 8660805146"  class="icon"><i class="fa-brands fa-square-whatsapp fa-fade" style="color: #63E6BE;"></i></a>
+      </div>
+    </div>
+    <div fxFlex.gt-sm="50" fxFlex.lt-md="50" fxLayoutAlign="center center"></div>
+  </div>
+  <!-- <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center" class="contact_bg" id="contact">
     <div fxFlex="10"></div>
     <div fxFlex="40">
       <div fxLayout="column" class="contact">
@@ -34,8 +51,9 @@
           </p>
         </div>
         <div fxFlex="30">
-          <i class="fa-brands fa-square-google-plus"></i> ncnaik131@gmail.com <br>
-          <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i> 8660805146
+          <i class="fa-brands fa-square-google-plus"></i> ncnaik131@gmail.com <br/>
+          <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i> 8660805146 <br/> 
+          <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/naveenchandra-naik-a38668237/"> https://www.linkedin.com/in/naveenchandra-naik</a>
         </div>
         <div fxFlex="30"></div>
       </div>
@@ -68,5 +86,5 @@
       </div>
     </div>
     <div fxFlex="10"></div>
-  </div>
+  </div> -->
 </div>

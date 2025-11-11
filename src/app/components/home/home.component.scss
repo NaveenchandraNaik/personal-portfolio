@@ -1,9 +1,66 @@
-.bg-color {
-    // background-color: #BFBFF7;
-    // height: 60vh;
-    // color: #fff;
+// .bg-color {
+//     // background-color: #BFBFF7;
+//     // height: 60vh;
+//     // color: #fff;
+
+//     // font-size: x-large;
+// }
+.title-text {
+    font-size: xx-large;
     font-weight: bold;
+}
+
+.para {
+    font-size: small;
+}
+
+.title-subtext {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    // margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: large;
+    font-weight: 400;
+    // text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 0;
+    // transform: translateY(-50%);    
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+}
+.icon {
     font-size: x-large;
+    margin: 0px 11px;
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(252, 22, 149, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .example-card {
@@ -15,31 +72,33 @@
 
 .homepage_image {
     display: block;
-    min-height: 650px;
+    min-height: 630px;
     // Using relative path
     background: url('../../../assets/image/developer-pic.jpg') no-repeat center;
     width: 43rem;
 }
 
-.contact_bg{
+.contact_bg {
     // display: block;
     min-height: 570px;
     // Using relative path
     background: url('../../../assets/image/contact.png') no-repeat center;
 }
 
-.full-width{
+.full-width {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
+
     // .full-width{
     //     width: auto;
     // }
-    .contact{
+    .contact {
         padding: 2rem;
     }
-    .button{
+
+    .button {
         display: flex;
         padding: 1rem;
     }
