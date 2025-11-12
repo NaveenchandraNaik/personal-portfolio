@@ -1,0 +1,13 @@
+# Detect these languages
+*.ts linguist-detectable=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+
+# Ignore build output and dependencies
+dist/* linguist-generated
+node_modules/* linguist-vendored
+
+# Ignore assets
+*.png linguist-generated
+*.jpg linguist-generated
+*.svg linguist-generated
